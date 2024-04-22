@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitProfile Viewer | Alok Yadav</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>GitProfile Viewer</h2>
+      <!-- <header>Explore GitHub Profiles with GitProfile Viewer</header> -->
+      <!-- <p>GitProfile Viewer is a JavaScript project designed to provide users with a convenient way to explore GitHub profiles. By simply entering a GitHub username into the input box, users can instantly retrieve essential information about the user, including their avatar, followers count, following count, name, and username. This project utilizes the GitHub API to fetch real-time data, offering users a seamless experience in discovering and learning more about GitHub users. Whether you're curious about someone's GitHub presence or want to quickly access essential profile details, GitProfile Viewer simplifies the process, making it easier than ever to navigate the GitHub ecosystem.</p> -->
+      <div class="input">
+        <form action="">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            autofocus
+            placeholder="Enter your Github username..."
+          />
+          <button id="search"><i class="bx bx-search-alt"></i></button>
+        </form>
+      </div>
+      <div class="error"></div>
+      <div class="card">
+        <div class="avatar">
+          <img src="" alt="User Avatar" id="image" />
+        </div>
+        <div class="username">Username</div>
+        <div class="name">Name</div>
+        <div class="follow-info">
+          <div class="followers">
+            <span>Followers</span><br />
+            <span id="followers"></span>
+          </div>
+          <div class="following">
+            <span>Following</span><br />
+            <span id="following"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
